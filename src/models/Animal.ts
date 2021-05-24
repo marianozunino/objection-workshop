@@ -1,18 +1,11 @@
-import { Model } from "objection";
+import { BaseEntity } from "./BaseEntity";
 import { Client } from "./Client";
 import { Vet } from "./Vet";
 
-export class Animal extends Model {
+export class Animal extends BaseEntity {
   name!: string;
   race!: string;
-  clientId!: number;
-
-  readonly id!: number;
-  readonly createdAt!: Date;
-  readonly updatedAt!: Date;
 
   owner?: Partial<Client>;
   vets?: Partial<Vet>[];
-
-  static tableName = "animals";
 }
