@@ -15,4 +15,15 @@ export abstract class BaseEntity extends Model {
     void super.$beforeUpdate(opt, context);
     this.updatedAt = new Date();
   }
+
+  $parseDatabaseJson(json: BaseEntity): BaseEntity {
+    // Remember to call the super class's implementation.
+    json = super.$parseDatabaseJson(json) as BaseEntity;
+
+    // Do your conversion here.
+    json.createdAt = new Date(json.createdAt);
+    json.updatedAt = new Date(json.updatedAt);
+
+    return json;
+  }
 }
