@@ -15,7 +15,9 @@
     "dotenv": "^10.0.0",
     "knex": "^0.95",
     "objection": "^2.2.15",
-    "sqlite3": "^5.0.2"
+    "reflect-metadata": "^0.1.13",
+    "sqlite3": "^5.0.2",
+    "tsyringe": "^4.5.0"
   },
   "devDependencies": {
     "@types/node": "^15.6.0",
