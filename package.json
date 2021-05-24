@@ -1,0 +1,26 @@
+{
+  "author": "Mariano Zunino",
+  "license": "MIT",
+  "name": "objection-example",
+  "version": "0.1.0",
+  "description": "Objection.js with typescript",
+  "dependencies": {
+    "knex": "^0.95",
+    "objection": "^2.2.15",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^15.6.0",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
+  }
+}

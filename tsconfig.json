@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "lib": ["es2020", "dom"],
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "target": "es5",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "outDir": "build",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "noErrorTruncation": true,
+    "baseUrl": "./",
+    "rootDir": "./",
+    "paths": {
+      "src/*": ["src/*"]
+    }
+  },
+  "compileOnSave": true,
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules", "*.d.ts"]
+}
