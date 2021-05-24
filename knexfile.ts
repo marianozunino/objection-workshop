@@ -1,10 +1,5 @@
-import { knexSnakeCaseMappers } from "objection";
+import { Config } from "src/config";
 
 export default {
-  client: "sqlite3",
-  useNullAsDefault: true,
-  connection: {
-    filename: "./example.db",
-  },
-  ...knexSnakeCaseMappers(),
+  ...Config.database[process.env.NODE_ENV || "develop"],
 };
