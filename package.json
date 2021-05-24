@@ -4,7 +4,15 @@
   "name": "objection-example",
   "version": "0.1.0",
   "description": "Objection.js with typescript",
+  "scripts": {
+    "knex": "knex",
+    "build": "rimraf build; tsc -p tsconfig.app.json",
+    "start": "tsnd src/app.ts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "yarn lint -- --fix"
+  },
   "dependencies": {
+    "dotenv": "^10.0.0",
     "knex": "^0.95",
     "objection": "^2.2.15",
     "sqlite3": "^5.0.2"
