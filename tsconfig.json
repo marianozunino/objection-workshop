@@ -16,12 +16,7 @@
     "strict": true,
     "strictNullChecks": true,
     "skipLibCheck": true,
-    "noErrorTruncation": true,
-    "baseUrl": "./",
-    "rootDir": "./",
-    "paths": {
-      "src/*": ["src/*"]
-    }
+    "noErrorTruncation": true
   },
   "compileOnSave": true,
   "include": ["**/*.ts"],
